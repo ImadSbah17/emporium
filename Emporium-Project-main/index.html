@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emporium.</title>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header-->
+    <header>
+        <h1>emporium.</h1>
+    </header>
+
+    <!-- NavBar -->
+
+    <nav>
+
+        <ul>
+            <li><a class="lien" href="">Home</a> </li>
+            <li><a class="lien" href="">Product</a> </li>
+            <li><a class="lien" href="">Blog</a> </li>
+            <li><a class="lien" href="">Elements</a> </li>
+            <li><a class="lien" href="">About</a> </li>
+            <li><a class="lien" href="">Contact</a> </li>
+
+            <li class="dernierLi">
+                <button class="modeClair"></button>
+                <button class="modeSombre"></button>
+                <button id="connection">Connexion</button>
+            </li>
+        </ul>
+
+        <!-- Pop Up Connection -->
+
+        <div id="myPopUpConnection" class="PopUp">
+
+            <div class="PopUpContenu">
+
+                <button class="close">
+                    &times;
+                </button>
+
+                <h3>Se connecter à emporium.</h3>
+
+                <div>
+                    <p>Adresse mail / Utilsateur</p>
+                    <input type="email">
+                </div>
+
+                <div>
+                    <p>Mot de passe</p>
+                    <input type="password">
+                </div>
+
+                <div class="d-flex">
+                    <button class="bg-info">Se connecter</button>
+                    <button class="bg-info">S'inscrire</button>
+                </div>
+
+                <div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pop Up Inscription -->
+        <div id="myPopUpInscription" class="PopUp">
+
+            <div class="PopUpContenu">
+
+                <button class="close">
+                    &times;
+                </button>
+
+                <h3>S'inscrire à emporium.</h3>
+                <p>Nom</p>
+                <input type="text">
+                <p>Prenom</p>
+                <input type="text">
+                <p>email</p>
+                <input type="email">
+                <p>Mot de passe</p>
+                <input type="password">
+                <p>Confirmation du mot de passe</p>
+                <input type="password">
+
+                <div class="d-flex">
+                    <button class="bg-info">Se connecter</button>
+                    <button class="bg-info">S'inscrire</button>
+                </div>
+
+                <div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- 1ere Section -->
+
+    <section>
+        <div class="row container">
+            <div class="gauche col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7 ">
+                <h2>Shop at</h2>
+                <img src="./public/img/logo.png" alt="">
+                <p> A wonderful serenity has taken possession of my entire soul,like these sweet mornings of sprong
+                    which i
+                    enjoy with my.</p>
+                <a href="#RecentssProducts"><button>Sale Items</button></a>
+            </div>
+
+            <div class="droite col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+
+                <img src="./public/img/slider-1.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- 2eme section -->
+
+
+    <section>
+
+        <div class="row">
+
+            <div class="secti col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+
+                <div style="background-image: url(./public/img/services/service-1.jpg);">
+                    <h2>Living Room</h2>
+                    <div class="myBorder"></div>
+                </div>
+
+            </div>
+
+            <div class="secti col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+
+                <div style="background-image:url(./public/img/services/service-2.jpg)">
+                    <h2>Sale Items</h2>
+                    <div class="myBorder"></div>
+                </div>
+
+
+            </div>
+
+            <div class="secti col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                <div style="background-image: url(./public/img/services/slider-3.jpg);">
+                    <h2>Clothes</h2>
+                    <div class="myBorder"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <!-- 3eme section -->
+
+    <section id="RecentssProducts">
+        <h1>Recents Products</h1>
+        <div class="container" id="cactus">
+            <div class="row">
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4  " id="premier">
+                    <img class="a-img-section" src="./public/img/products_mini/product-luxry-sofa.jpg" alt="">
+                    <h3>Luxury sofa</h3>
+                    <p>$600.00</p>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4  " id="style_img_1">
+                    <img class="a-img-section" src="./public/img/products_mini/product-gloves.jpg" alt="">
+                    <div class="row">
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+                            <p id="style_p">
+                                Sale
+                            </p>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  d-inline text-left">
+                            <h1 class="p-0 m-0">
+                                Leather gloves
+                            </h1>
+                            <p>
+                                $34.00
+                                <span>$27.00</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                    <img class="a-img-section" src="./public/img/products_mini/product-cups.jpg" alt="">
+                    <h3>Colorful Bowl</h3>
+                    <p>$18.00</p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                    <img class="a-img-section" src="./public/img/products_mini/product-bag.jpg" alt="">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                    <img class="a-img-section" src="./public/img/products_mini/product-tshitr.jpg" alt="">
+                    <h3>Minimal T-Shirt</h3>
+                    <p>$15.00</p>
+                </div>
+
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                    <img class="a-img-section" src="./public/img/products_mini/product-plates.jpg" alt="">
+                    <h3>Plates Set</h3>
+                    <p>$30.00</p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                    <img class="a-img-section" src="./public/img/products_mini/product-modern-sofa.jpg" alt="">
+                    <h3>Modern Sofa</h3>
+                    <p>$900.00</p>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                    <img class="a-img-section" src="./public/img/products_mini/product-bed.jpg" alt="">
+                    <h3>Bed Linen</h3>
+                    <p>$79.00</p>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                    <img class="a-img-section" src="./public/img/products_mini/product-shoes.jpg" alt="">
+                    <h3>Minimal Shoes</h3>
+                    <p>$60.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4eme Section -->
+
+    <section style="background-image: url('./public/img/cta-bg.jpg');">
+        <div>
+            <h3>Discover Thousands Of Great Products</h3>
+            <a href="#footerr"><button>Learn More</button></a>
+        </div>
+    </section>
+
+    <!-- 5eme Section -->
+
+    <section>
+
+        <div class="center">
+            <div class="wrapper">
+                <div class="inner">
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-luxry-sofa.jpg">
+                        <div class="content">
+                            <h1>Luxury sofa</h1>
+                            <p>$600.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-gloves.jpg">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p id="style_p">
+                                        Sale
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <h1>
+                                        Leather gloves
+                                    </h1>
+                                    <p >
+                                        $34.00 &nbsp;
+                                        <span > $27.00</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-cups.jpg">
+                        <div class="content">
+                            <h1>Colorful Bowl</h1>
+                            <p>$18.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-bag.jpg">
+                        <div class="content">
+                            <h1>Minimal T-Shirt</h1>
+                            <p>$15.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-tshitr.jpg">
+                        <div class="content">
+                            <h1>Plates Set</h1>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-plates.jpg">
+                        <div class="content">
+                            <h1>Minimal Shoes</h1>
+                            <p>$60.00</p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-modern-sofa.jpg">
+                        <div class="content">
+                            <h1>Modern Sofa</h1>
+                            <p>$900.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-bed.jpg">
+                        <div class="content">
+                            <h1>Bed Linen</h1>
+                            <p>$79.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-shoes.jpg">
+                        <div class="content">
+                            <h1>Minimal Shoes</h1>
+                            <p>$60.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-bed.jpg">
+                        <div class="content">
+                            <h1>Bed Linen</h1>
+                            <p>$79.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-cups.jpg">
+                        <div class="content">
+                            <h1>Colorful Bowl</h1>
+                            <p>$18.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-modern-sofa.jpg">
+                        <div class="content">
+                            <h1>Modern Sofa</h1>
+                            <p>$900.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-shoes.jpg">
+                        <div class="content">
+                            <h1>Minimal Shoes</h1>
+                            <p>$60.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-tshitr.jpg">
+                        <div class="content">
+                            <h1>Plates Set</h1>
+                            <p>$30.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-gloves.jpg">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p id="style_p">
+                                        Sale
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <h1>
+                                        Leather gloves
+                                    </h1>
+                                    <p>
+                                        $34.00 &nbsp;
+                                        <span>$27.00</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-modern-sofa.jpg">
+                        <div class="content">
+                            <h1>Modern Sofa</h1>
+                            <p>$900.00</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="map">
+                <button class="active first"></button>
+                <button class="second"></button>
+                <button class="third"></button>
+                <button class="fourth"></button>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- 6eme Section -->
+
+    <section>
+
+        <div class="row ">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 coter">
+                <i class="far fa-check-circle"></i>
+                <h4>Trusted by 10,000+ customers</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus veniam quos aut. Vero eligendi
+                    tempora,? Lorem ipsum dolor sit amet.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 milieu">
+                <i class="fas fa-paper-plane"></i>
+                <h4>Very Fast Shipping</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus veniam quos aut. Vero eligendi
+                    tempora,? Lorem ipsum dolor sit amet.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 coter">
+                <i class="far fa-check-circle"></i>
+                <h4>Trusted by 10,000+ customers</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus veniam quos aut. Vero eligendi
+                    tempora,? Lorem amet.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footerr">
+        <div class="footer-haut">
+            <div class="row container fouter">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                    <h5>About Us</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugit enim quos, necessitatibus
+                        ullam cum fuga temporibus saepe consequuntur neque molestias vero! Nam quis similique voluptatem
+                        ratione culpa, doloremque libero.</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                    <h5>Recents Posts</h5>
+                    <ul>
+                        <li>Hello World</li>
+                        <li>Wonderful serenity has taken</li>
+                        <li>In my soul and absorb its power</li>
+                        <li>I hear the buzz of the little</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                    <h5>Tag Cloud</h5>
+                    <div class="row ml-2">
+                        <span>business</span>
+                        <span>confidence</span>
+                        <span>gadgets</span>
+                    </div>
+                    <div class="row ml-2">
+                        <span>identity</span>
+                        <span>logo</span>
+                        <span>photography</span>
+                    </div>
+                    <div class="row ml-2">
+                        <span>time</span>
+                        <span>trips</span>
+                        <span>works</span>
+                    </div>
+                    <div class="row ml-2">
+                        <span>work space</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-bas">
+            <h2 style="margin: 0px;">Copyright 2020 GOODLAYERS, Oussama And Imad</h2>
+        </div>
+    </footer>
+
+
+    <!-- Script -->
+
+    <script type="module" src="./src/js/main.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

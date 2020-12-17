@@ -1,0 +1,169 @@
+body
+    font-family: 'Poppins', sans-serif
+    margin: 0px
+
+header
+    h1
+        text-align: center
+        font-size: 50px
+        font-weight: bolder
+        margin: 70px 0px
+
+nav
+    height: 40px
+    background-color: white
+    position: sticky
+    top: 0
+    z-index: 999
+    
+    ul
+        list-style: none
+        display: flex
+        justify-content: center
+        align-items: center
+        text-transform: uppercase
+        font-size: 12px
+
+        @media (min-width: 346px) and ( max-width: 645px)
+            font-size: 10px
+            padding: 0px
+        @media (min-width: 768px) and ( max-width: 1366px)
+            font-size: 10px
+            padding: 0px
+            width: 100%
+
+        li
+            margin: 0px 30px
+            text-decoration: none
+            @media (min-width: 346px) and ( max-width: 645px)
+                margin: 0px 2px
+            .lien
+                color: gray
+                text-decoration: none
+
+        .dernierLi
+            display: flex
+            justify-content: center
+            align-items: center
+
+            button
+
+                &:first-child,&:nth-child(2)
+                    border: #717b83 solid 1px
+                    height: 20px
+                    width: 20px
+                    margin: 0px 3px
+                    border-radius: 5px
+                    outline: none
+
+                    @media (min-width: 346px) and ( max-width: 645px)
+                        margin: 0px 2px
+                        height: 10px
+                        width: 10px
+                    @media (min-width: 768px) and ( max-width: 1366px)
+                        margin: 0px
+
+            .modeClair
+                background-color: white
+            .modeSombre
+                background-color: #353b40
+
+            button
+                &:nth-child(3)
+                    text-transform: uppercase
+                    outline: none
+                    border: none
+                    padding: 10px 10px
+                    background-color: grey
+                    color: white
+                    @media (min-width: 346px) and ( max-width: 645px)
+                        padding: 0px
+
+.PopUp
+    position: fixed
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    visibility: hidden
+    opacity: 0
+    transition: all 0.35s ease-in
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    z-index: 1000
+    @media (min-width: 346px) and ( max-width: 645px)
+        width: 100%
+    @media (min-width: 768px) and ( max-width: 1366px)
+        width: 100%
+
+.PopUpContenu
+    position: relative
+    border-radius: 10px
+    background: white
+    color: black
+    padding: 100px 50px
+    border: solid 2px black
+    font-family: 'Poppins', sans-serif
+    width: 500px
+
+    @media (min-width: 346px) and ( max-width: 645px)
+        width: 250px
+        padding: 50px 10px
+
+    .close
+        color: black
+        font-size: 30px
+        outline: none
+
+    .bg-info
+        height: 50px
+        width: 130px
+        font-size: 15px
+        margin: 30px auto
+        outline: none
+        border-radius: 40px
+        border: none
+        color: white
+        @media (min-width: 346px) and ( max-width: 645px)
+            height: 40px
+            width: 70px
+            font-size: 10px
+
+    p
+        margin-top: 10px
+        font-size: 20px
+        @media (min-width: 346px) and ( max-width: 645px)
+            font-size: 10px
+
+    h3
+        font-size: 30px
+        @media (min-width: 346px) and ( max-width: 645px)
+            font-size: 15px
+    input
+        width: 100%
+        height: 70px
+        outline: none
+        border: none
+        border-bottom: solid whitesmoke 2px
+        border-left: solid whitesmoke 2px
+        padding-left: 10px
+
+        @media (min-width: 346px) and ( max-width: 645px)
+            height: 30px
+
+.assombrir
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )
+
+.PopUpVisible
+    visibility: visible
+    opacity: 1
+
+#myPopUpInscription
+    overflow-x: hidden
+
+    input
+        height: 50px
+        @media (min-width: 346px) and ( max-width: 645px)
+            height: 10px
